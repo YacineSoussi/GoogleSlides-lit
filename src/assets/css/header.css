@@ -1,0 +1,46 @@
+#app-navbar {
+    height: 56px;
+}
+
+#app-navbar nav.navbar a:not(.dropdown-item),
+#app-navbar nav.navbar .nav-link.active {
+    color: white;
+}
+
+#app-navbar nav.navbar li {
+    list-style: none;
+}
+
+#app-navbar nav.navbar li:hover a {
+    color: rgb(150, 150, 150);
+}
+
+#app-navbar nav.navbar ul.dropdown-menu {
+    right: 0;
+    left: initial;
+}
+
+@media (max-width: 992px) {
+    #app-navbar nav.navbar ul.dropdown-menu {
+        right: initial;
+        left: 0;
+    }
+}
+
+#app-navbar .navbar-toggler {
+    background-color: white;
+}
+
+#app-navbar[routeActive="/login"] #login {
+    display: none;
+}
+
+#app-navbar nav.navbar #logout button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#app-navbar nav.navbar #logout button:hover {
+    color: rgb(150, 150, 150);
+}

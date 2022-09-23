@@ -1,0 +1,29 @@
+{
+  "name": "pwaslides",
+  "version": "1.0.0",
+  "description": "- PwaSlides",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx vite dev --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roulioo/PwaSlides.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roulioo/PwaSlides/issues"
+  },
+  "homepage": "https://github.com/Roulioo/PwaSlides#readme",
+  "dependencies": {
+    "firebase": "^9.10.0",
+    "froala-editor": "^4.0.13",
+    "froala-editor-yq": "^2.7.61",
+    "lit": "^2.2.6",
+    "page": "^1.11.6",
+    "reveal.js": "^4.3.1",
+    "vite": "^2.9.13"
+  }
+}

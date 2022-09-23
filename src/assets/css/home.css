@@ -1,0 +1,50 @@
+/* red : #C70039 */
+/* green : #8fce00 */
+/* blue : #002080 */
+
+#app-home[page][active] figure {
+    margin: 1rem;
+    max-width: 800px;
+    display: flex;
+}
+
+#app-home[page][active] figure video {
+    height: auto;
+    width: 100%;
+    pointer-events: none;
+}
+
+#app-home[page][active] .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app-home[page][active] img.img-fluid {
+    width: 500px;
+    height: 175px;
+}
+
+@media (min-width: 406px) and (max-width: 510px) {
+    #app-home[page][active] img.img-fluid {
+        width: 400px
+    }
+}
+
+@media (min-width:363) and (max-width: 405px) {
+    #app-home[page][active] img.img-fluid {
+        width: 400px
+    }
+}
+
+@media (min-width: 301px) and (max-width: 362px) {
+    #app-home[page][active] img.img-fluid {
+        width: 400px
+    }
+}
+
+@media (max-width: 300px) {
+    #app-home[page][active] img.img-fluid {
+        width: 250px
+    }
+}

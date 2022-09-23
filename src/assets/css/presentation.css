@@ -1,0 +1,251 @@
+#app-presentation[page][active] {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app-presentation[page][active] .app-presentation-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#app-presentation[page][active] .app-presentation-container ul {
+    padding-left: 0;
+    overflow: scroll;
+    width: 100%;
+    text-align: center;
+}
+
+#app-presentation[page][active] .app-presentation-container ul presentation-data-container {
+    height: 100%;
+    display: block;
+}
+
+#app-presentation[page][active] .app-presentation-container .app-presentation-img {
+    height: 85px;
+    width: 152px;
+}
+
+#app-presentation[page][active] .app-presentation-container .app-presentation-img img {
+    height: 100%;
+    width: 100%;
+}
+
+#app-presentation[page][active] li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#app-presentation[page][active] li:hover a.presentation-link {
+    color: rgb(206, 198, 198);
+}
+
+#app-presentation[page][active] .app-presentation-container button {
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+#app-presentation[page][active] .app-presentation-container button:hover {
+    color: rgb(83, 75, 75);
+}
+
+#app-presentation[page][active] .app-presentation-container a.presentation-link {
+    text-decoration: none;
+    color: white;
+}
+
+#app-presentation-add[page][active],
+#app-presentation-details[page][active] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+#app-presentation-add[page][active] .add-presentation,
+#app-presentation-details[page][active] .edit-presentation {
+    margin: 0 15px;
+}
+
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.fr-second-toolbar span.fr-counter,
+#app-presentation-add[page][active] .add-presentation #wysiwyg div.fr-second-toolbar span.fr-counter {
+    color: black;
+}
+
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.fr-second-toolbar span.fr-counter,
+#app-presentation-add[page][active] .add-presentation #wysiwyg div.fr-second-toolbar a#fr-logo span {
+    color: black;
+}
+
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.fr-second-toolbar span.fr-counter,
+#app-presentation-add[page][active] .add-presentation #wysiwyg div.fr-second-toolbar a#fr-logo svg {
+    display: none;
+}
+
+#app-presentation-add[page][active] .add-presentation {
+    height: calc(100% - 40px);
+}
+
+#app-presentation-details[page][active] .edit-presentation {
+    height: calc(100% - 40px);
+}
+
+#app-presentation-add[page][active] .add-presentation #slides,
+#app-presentation-details[page][active] .edit-presentation #slides {
+    width: 200px;
+    overflow: auto;
+}
+
+#app-presentation-add[page][active] .add-presentation #wysiwyg,
+#app-presentation-details[page][active] .edit-presentation #wysiwyg {
+    max-height: 100%;
+    overflow: scroll;
+    width: calc(100% - 260px);
+}
+
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.codox-styles div.codox-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5px 0;
+}
+
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.codox-styles div.codox-container .codox-session-info-avatar {
+    margin-right: 7px;
+}
+
+#app-presentation-add[page][active] .add-presentation #wysiwyg div.fr-toolbar.fr-desktop,
+#app-presentation-add[page][active] .add-presentation #wysiwyg div.fr-second-toolbar,
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.fr-toolbar.fr-desktop,
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.fr-second-toolbar {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#app-presentation-add[page][active] .add-presentation #wysiwyg div.fr-wrapper,
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.fr-wrapper {
+    height: 100%;
+    overflow: auto;
+}
+
+#app-presentation-add[page][active] .add-presentation #wysiwyg div.fr-wrapper {
+    max-height: calc(100% - 140px);
+}
+
+#app-presentation-details[page][active] .edit-presentation #wysiwyg div.fr-wrapper {
+    max-height: calc(100% - 180px);
+}
+
+#app-presentation-add[page][active] .wysiwyg-button,
+#app-presentation-details[page][active] .wysiwyg-button {
+    border-radius: 10px;
+    margin: 10px 0px 0px 15px;
+    border: none;
+    color: black;
+    width: 150px;
+    background-color: white;
+}
+
+#app-presentation-add[page][active] .wysiwyg-input,
+#app-presentation-details[page][active] .wysiwyg-input {
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+    margin: 10px 0px 0px 15px;
+}
+
+#app-presentation-add[page][active] .wysiwyg-input::placeholder,
+#app-presentation-details[page][active] .wysiwyg-input::placeholder {
+    color: black;
+}
+
+#app-presentation-add[page][active] .wysiwyg-button:hover,
+#app-presentation-details[page][active] .wysiwyg-button:hover {
+    color: rgb(150, 150, 150);
+}
+
+#app-presentation-details[page][active] .edit-presentation body {
+    height: 100%;
+    width: 100%;
+    background-color: white !important  ;
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: black;
+}
+
+#app-presentation-add[page][active] .add-presentation .slide,
+#app-presentation-details[page][active] .edit-presentation .slide {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: black;
+}
+
+#app-presentation-add[page][active] .add-presentation .slide > *,
+#app-presentation-details[page][active] .edit-presentation .slide > * {
+    pointer-events: none;
+}
+
+#app-presentation-add[page][active] .add-presentation .slide > * img,
+#app-presentation-details[page][active] .edit-presentation .slide > * img {
+    width: 50% !important;
+}
+
+#app-presentation-add[page][active] .add-presentation .slide.active,
+#app-presentation-details[page][active] .edit-presentation .slide.active {
+    border: 5px solid black;
+}
+
+#app-presentation-add[page][active] .add-presentation .slide.active,
+#app-presentation-details[page][active] .edit-presentation .slide.active {
+    color: black;
+}
+
+#app-presentation-details[page][active] .diaporama {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 15px;
+}
+
+#app-presentation-details[page][active] .diaporama button {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+#app-presentation-details[page][active] .diaporama:hover button {
+    color: rgb(150, 150, 150);
+}
+
+#app-reveal[page][active] {
+    height: 100%;
+    width: 100%;
+}
+
+#app-reveal[page][active] .reveal aside .controls {
+    color: white !important;
+}
+
+#app-reveal[page][active] .reveal .slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app-reveal[page][active] button.navigate-left .controls-arrow,
+#app-reveal[page][active] button.navigate-right .controls-arrow {
+    color: white;
+}
